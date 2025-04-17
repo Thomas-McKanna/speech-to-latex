@@ -8,6 +8,7 @@ import { AudioSection } from "./components/AudioSection";
 import { useLLMEngine } from "./hooks/useLLMEngine";
 import { useConversation } from "./hooks/useConversation";
 import { DarkModeToggle } from "./components/DarkModeToggle";
+import { GitHubIcon } from "./assets/icons/GitHubIcon";
 
 function App() {
   const [whisperModel, setWhisperModel] = useState("Xenova/whisper-tiny");
@@ -81,6 +82,19 @@ function App() {
           </div>
         )}
       </div>
+      
+      {/* GitHub Link */}
+      <footer className="w-full py-4 mt-8 flex justify-center">
+        <a 
+          href="https://github.com/Thomas-McKanna/speech-to-latex" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-[var(--text-secondary)] hover:text-[var(--color-accent-blue)] transition-colors"
+        >
+          <GitHubIcon className="h-5 w-5" />
+          <span>View on GitHub</span>
+        </a>
+      </footer>
     </div>
   );
 }
