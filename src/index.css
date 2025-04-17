@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  /* Dark mode colors */
+  --color-dark-bg-primary: oklch(0.15 0.02 240);
+  --color-dark-bg-secondary: oklch(0.2 0.02 240);
+  --color-dark-text-primary: oklch(0.95 0.02 240);
+  --color-dark-text-secondary: oklch(0.85 0.02 240);
+  --color-dark-border: oklch(0.3 0.02 240);
+
+  /* Light mode accent colors that work well in both modes */
+  --color-accent-blue: oklch(0.65 0.2 250);
+  --color-accent-blue-light: oklch(0.85 0.1 250);
+  --color-accent-green: oklch(0.65 0.2 150);
+  --color-accent-green-light: oklch(0.85 0.1 150);
+  --color-accent-purple: oklch(0.6 0.18 300);
+  --color-accent-purple-light: oklch(0.8 0.1 300);
+  --color-accent-teal: oklch(0.7 0.15 200);
+  --color-accent-teal-light: oklch(0.85 0.08 200);
+}
+
+:root {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Default light mode variables */
+  --bg-primary: white;
+  --bg-secondary: oklch(0.97 0.01 240);
+  --text-primary: oklch(0.2 0.01 240);
+  --text-secondary: oklch(0.4 0.01 240);
+  --border-color: oklch(0.85 0.01 240);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-accent-blue);
+  text-decoration: inherit;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  /* Remove transition for instant mode switching */
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg-primary: var(--color-dark-bg-primary);
+    --bg-secondary: var(--color-dark-bg-secondary);
+    --text-primary: var(--color-dark-text-primary);
+    --text-secondary: var(--color-dark-text-secondary);
+    --border-color: var(--color-dark-border);
+  }
+}
+
+:root.dark {
+  color-scheme: dark;
+  --bg-primary: var(--color-dark-bg-primary);
+  --bg-secondary: var(--color-dark-bg-secondary);
+  --text-primary: var(--color-dark-text-primary);
+  --text-secondary: var(--color-dark-text-secondary);
+  --border-color: var(--color-dark-border);
+}
