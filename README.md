@@ -9,7 +9,7 @@
 
 https://github.com/user-attachments/assets/595ae5fd-17d8-49bc-b811-ad450c06a02a
 
-## [🚀 Try it now!](https://your-deployment-url.com)
+## [🚀 Try it now!](https://thomas-mckanna.github.io/speech-to-latex/)
 
 ## Overview
 
