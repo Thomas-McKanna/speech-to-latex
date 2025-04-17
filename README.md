@@ -51,7 +51,7 @@ Try saying:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/speech-to-latex.git
+git clone https://github.com/Thomas-McKanna/speech-to-latex.git
 
 # Navigate to the project directory
 cd speech-to-latex
