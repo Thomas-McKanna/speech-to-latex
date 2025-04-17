@@ -43,7 +43,9 @@ export function useLLMEngine(modelName: string): LLMEngineState {
             if (progress.progress > highestProgress) {
               highestProgress = progress.progress;
               setLoadingStatus(
-                `Loading model: ${Math.round(highestProgress * 100)}%`
+                `Loading model (only slow first time): ${Math.round(
+                  highestProgress * 100
+                )}%`
               );
             } else {
               // If progress seems to go backward, just report the stage without percentage
