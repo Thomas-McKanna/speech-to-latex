@@ -1,11 +1,13 @@
 # Speech to LaTeX
 
-<!-- Demo video will go here -->
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Built with WebLLM](https://img.shields.io/badge/Built%20with-WebLLM-blue)](https://github.com/mlc-ai/web-llm)
 [![Powered by Whisper](https://img.shields.io/badge/Powered%20by-Whisper-orange)](https://github.com/xenova/whisper-web)
 [![Rendered with MathJax](https://img.shields.io/badge/Rendered%20with-MathJax-green)](https://www.mathjax.org/)
+
+https://github.com/user-attachments/assets/595ae5fd-17d8-49bc-b811-ad450c06a02a
 
 ## [🚀 Try it now!](https://your-deployment-url.com)
 
