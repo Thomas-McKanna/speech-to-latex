@@ -35,6 +35,9 @@ jobs:
           # Build with the correct base path for GitHub Pages
           npm run build -- --base=/
 
+      - name: Create CNAME file
+        run: echo "latex.thomasmckanna.com" > dist/CNAME
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
