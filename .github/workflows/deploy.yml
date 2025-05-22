@@ -32,10 +32,8 @@ jobs:
 
       - name: Build
         run: |
-          # Get repository name to use as base path
-          REPO_NAME=$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f2)
           # Build with the correct base path for GitHub Pages
-          npm run build -- --base=/$REPO_NAME/
+          npm run build -- --base=/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
